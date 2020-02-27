@@ -3,6 +3,9 @@
 	<persistence-unit name="SportsTeamsW3" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<class>model.SportTeam</class>
+		<class>model.User</class>
+		<class>model.LineupDetails</class>
+		<class>controller.LocalDateAttributeConverter</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://cis175.croaukc0ws3o.us-east-2.rds.amazonaws.com/teams"/>
